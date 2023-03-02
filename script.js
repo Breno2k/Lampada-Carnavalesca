@@ -9,11 +9,11 @@ function energia() {
     if (cont < 5) {
         if (botão.innerHTML == 'ACENDER') {
             txt.innerHTML = 'Cliquem em <strong>"APAGAR"</strong> para apagar a lâmpada.'
-            img.src = 'mídia/acesa.jpg'
+            img.src = 'mídia/lâmpada_acesa.jfif'
             botão.innerHTML = 'APAGAR'
         } else {
             txt.innerHTML = 'Cliquem em <strong>"ACENDER"</strong> para acender a lâmpada.'
-            img.src = 'mídia/apagada.jpg'
+            img.src = 'mídia/lâmpada_apagada.jfif'
             botão.innerHTML = 'ACENDER'
             cont = cont + 1
         }
@@ -21,12 +21,6 @@ function energia() {
         txt.innerHTML = 'Sua Lâmpada quebrou. Clique em <strong>"TROCAR LÂMPADA"</strong> para trocar a lâmpada.'
         img.src = 'mídia/lãmpada_quebrada.jfif'
         botão.innerHTML = 'TROCAR LÂMPADA'
-        //cont = 0
-    }
-}
-
-function trocarPage() {
-    if (cont == 5) {
-        window.confirm('teste')
+        cont = 0
     }
 }
